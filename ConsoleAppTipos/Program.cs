@@ -65,8 +65,6 @@ namespace ConsoleAppTipos
 
             Console.WriteLine("Despues del CAST");
             Console.WriteLine(myInt);
-
-
         }
     }
 }

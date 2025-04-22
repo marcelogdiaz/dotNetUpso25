@@ -8,6 +8,7 @@ namespace ConsoleAppTipos2
 {
     internal class Program
     {
+        public static int miVariableGlobal = 100;
         /// <summary>
         /// Tipo de Dato ESTRUCTURA, Tipo de Dato por valor
         /// </summary>
@@ -30,8 +31,8 @@ namespace ConsoleAppTipos2
         /// <param name="param2"></param>
         /// <returns></returns>
         static int mifuncionPorReferencia( ref int param1, int param2) {
-
-            param1 = param2 * 2;
+            int valor3 = 3;
+            param1 = (param2 +valor3) * miVariableGlobal;
             return param1;
         }
 
@@ -44,7 +45,7 @@ namespace ConsoleAppTipos2
         static int mifuncionPorValor( int param1, int param2)
         {
 
-            param1 = param2 * 2;
+            param1 = param2 * 10;
             return param1;
         }
 
@@ -54,7 +55,7 @@ namespace ConsoleAppTipos2
             int val1 = 10;
             int val2 = 25;
 
-            resultado = mifuncionPorValor(val1, val2);
+            resultado = mifuncionPorValor( val1, val2);
 
             resultado = mifuncionPorReferencia(ref val1, val2);
 

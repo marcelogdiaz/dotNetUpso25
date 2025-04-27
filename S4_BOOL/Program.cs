@@ -13,7 +13,7 @@ namespace S4_BOOL
             bool valorB1=true;
             bool valorB2=false;
 
-            //AND
+            //Tabla de verdad AND
             //T,F = F
             //F,T = F
             //F,F=F
@@ -30,7 +30,7 @@ namespace S4_BOOL
             }
             //----------------------------------
 
-            //OR
+            //Tabla de verdad OR
             //T, F = T
             // F,T = T
             //F,F=F
@@ -45,7 +45,7 @@ namespace S4_BOOL
                 Console.WriteLine("ELSE");
             }
 
-            //XOR
+            //Tabla de verdad XOR
             //T, F = T
             // F,T = T
             //F,F=F

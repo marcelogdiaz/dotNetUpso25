@@ -16,9 +16,9 @@ namespace S4_S5_NUMEROS
             //Console.WriteLine($"float.MinValue = {float.MinValue}");
             //Console.WriteLine($"float.MaxValue = {float.MaxValue}");
             //Console.WriteLine($"double.MinValue = {double.MinValue}");
-            Console.WriteLine($"double.MaxValue = {double.MaxValue}");
+            //Console.WriteLine($"double.MaxValue = {double.MaxValue}");
             //Console.WriteLine($"decimal.MinValue = {decimal.MinValue}");
-            Console.WriteLine($"decimal.MaxValue = {decimal.MaxValue}");
+            //Console.WriteLine($"decimal.MaxValue = {decimal.MaxValue}");
             //Console.WriteLine($"short.MinValue = {short.MinValue}");
             //Console.WriteLine($"short.MaxValue = {short.MaxValue}");
             //Console.WriteLine($"long.MinValue = {long.MinValue}");
@@ -52,15 +52,15 @@ namespace S4_S5_NUMEROS
             //Console.WriteLine("Valor final de d: " + d);
 
 
-            Console.WriteLine(0.1m * 23.4M);
-            float numero = 0.1f * 23.4F;
-            Console.WriteLine(numero);
-            Console.WriteLine(numero.GetType().Name);
+            //Console.WriteLine(0.1m * 23.4M);
+            //float numero = 0.1f * 23.4F;
+            //Console.WriteLine(numero);
+            //Console.WriteLine(numero.GetType().Name);
 
-            //valor INFINITO
-            numero = (float.MaxValue) + 2;
-            Console.WriteLine(numero);
-            Console.WriteLine(numero.GetType().Name);
+            ////valor INFINITO
+            //numero = (float.MaxValue) + 2;
+            //Console.WriteLine(numero);
+            //Console.WriteLine(numero.GetType().Name);
             //if (Double.IsInfinity(numero)) {
             //    Console.WriteLine("ES INFINITO");
             //}
@@ -69,17 +69,19 @@ namespace S4_S5_NUMEROS
             //}
 
             //El resultado de dividir por INFINITO, asume un valor 0
-            Console.WriteLine(10 / numero);
+            //Console.WriteLine(10 / numero);
 
 
             //Excepcion al dividir por 0. Error en tiempo de ejecucion
-            int denominador = 0;
-            Console.WriteLine(10 / denominador);
+            //int denominador = 0;
+            //Console.WriteLine(10 / denominador);
 
-            double numeroD;
-            numeroD= Convert.ToDouble(float.MaxValue) + 2;
-            Console.WriteLine(numeroD);
-            Console.WriteLine(numeroD.GetType().Name);
+            //double numeroD;
+            //numeroD= Convert.ToDouble(float.MaxValue) + 2;
+            //Console.WriteLine(numeroD);
+            //Console.WriteLine(numeroD.GetType().Name);
+
+
             //Console.WriteLine(0.1m * 23.4);
 
             //int j = i++;
@@ -115,6 +117,35 @@ namespace S4_S5_NUMEROS
             //else { Console.WriteLine("A y B NO son distintos"); }
 
 
+            //Ejemplo de OPERADORES DE COMPARACION
+            //int num1, num2;
+
+            ////Ingresamos dos valores por consola
+            //Console.WriteLine("Ingrese el primer número: ");
+            //num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Ingrese el segundo número: ");
+            //num2 = Convert.ToInt32(Console.ReadLine());
+
+            ////Vamos a realizar la comparacion de los valores ingresados y mostrar los mensajes correspondientes
+            //if (num1 > num2)
+            //{
+            //    Console.WriteLine("{0} es mayor que {1}", num1, num2);
+            //}
+            //else if (num2 > num1)
+            //{
+            //    Console.WriteLine("{0} es mayor que {1}", num2, num1);
+            //}
+            //else {
+            //    Console.WriteLine("{0} y {1} son iguales", num1, num2);
+            //}
+
+            int x=10, y=20;
+            Console.WriteLine("x ==y {0}", (x ==y));
+            Console.WriteLine("x != y {0}",x != y);
+            Console.WriteLine("x > y {0}", x > y);
+            Console.WriteLine("x<y {0}", x<y);
+            Console.WriteLine("x >= y {0}", x >= y);
+            Console.WriteLine("x<=y {0}", x<=y);
 
             Console.ReadLine();
         }

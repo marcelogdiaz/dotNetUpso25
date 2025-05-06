@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada a un ensamblado.
-[assembly: AssemblyTitle("S4_BOOL")]
+[assembly: AssemblyTitle("S4_S5_BOOL")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("EXO S.A.")]
-[assembly: AssemblyProduct("S4_BOOL")]
+[assembly: AssemblyProduct("S4_S5_BOOL")]
 [assembly: AssemblyCopyright("Copyright © EXO S.A. 2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

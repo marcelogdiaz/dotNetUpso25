@@ -20,8 +20,6 @@ namespace S8_CLASES
 
             Console.WriteLine("Edad despues del cumpleaños...");
             Console.WriteLine($"{person1.Apellido} {person1.Nombre} tiene {person1.Edad} años.");
-            
-
 
             Persona person3 = person2;
 
@@ -29,8 +27,6 @@ namespace S8_CLASES
             Console.WriteLine("****************************");
             Console.WriteLine($"{person2.Apellido} {person2.Nombre} tiene {person2.Edad} años.");
             Console.WriteLine($"{person3.Apellido} {person3.Nombre} tiene {person3.Edad} años.");
-
-            
 
             Console.ReadLine();
         }

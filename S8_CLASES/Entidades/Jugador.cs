@@ -17,10 +17,29 @@ namespace S8_CLASES.Entidades
         public string Posicion { get => posicion; set => posicion = value; }
         #endregion
 
-        //public Jugador(stringint infracciones, string posicion)
-        //{
-        //    this.infracciones = infracciones;
-        //    this.posicion = posicion;
-        //}
+        public Jugador(string apellido, string nombre, int edad,  string posicion, int infracciones = 0):base(apellido, nombre, edad)
+        {
+            Infracciones = infracciones;
+            Posicion = posicion;
+        }
+
+        public void Correr() {
+            Console.WriteLine($"El JUGADOR {Apellido} esta corriendo.");
+        }
+
+        public void Precalentar()
+        {
+            Console.WriteLine($"El JUGADOR {Apellido} esta precalentando.");
+        }
+
+        public void TarjetaRoja()
+        {
+            Console.WriteLine($"El JUGADOR {Apellido} recibió tarjeta ROJA.");
+        }
+
+        public void TarjetaAmarilla()
+        {
+            Console.WriteLine($"El JUGADOR {Apellido} recibió tarjeta AMARILLA.");
+        }
     }
 }

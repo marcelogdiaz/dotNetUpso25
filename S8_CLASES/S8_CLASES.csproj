@@ -43,7 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entidades\Jugador.cs" />
+    <Compile Include="Entidades\Deportista.cs" />
+    <Compile Include="Entidades\JugadorFutbol.cs" />
     <Compile Include="Entidades\Persona.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

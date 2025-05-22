@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace S8_CLASES.Entidades
 {
-    internal class Jugador : Persona
+    internal class JugadorFutbol : Deportista
     {
         //campos propios de un jugador
         #region PROPERTIES
@@ -17,19 +17,21 @@ namespace S8_CLASES.Entidades
         public string Posicion { get => posicion; set => posicion = value; }
         #endregion
 
-        public Jugador(string apellido, string nombre, int edad,  string posicion, int infracciones = 0):base(apellido, nombre, edad)
+        public JugadorFutbol(string apellido, string nombre, int edad,  string posicion, int infracciones = 0):base(apellido, nombre, edad)
         {
             Infracciones = infracciones;
             Posicion = posicion;
         }
 
-        public void Correr() {
-            Console.WriteLine($"El JUGADOR {Apellido} esta corriendo.");
+        public override void Correr() {
+            base.Correr();
+            Console.WriteLine($"El JUGADOR {Apellido} esta corriendo hacia la pelota.");
         }
 
-        public void Precalentar()
+        public new void Precalentar()
         {
-            Console.WriteLine($"El JUGADOR {Apellido} esta precalentando.");
+            //base.Precalentar(); 
+            Console.WriteLine($"El JUGADOR {Apellido} esta precalentando con la pelota de futbol.");
         }
 
         public void TarjetaRoja()
@@ -40,6 +42,11 @@ namespace S8_CLASES.Entidades
         public void TarjetaAmarilla()
         {
             Console.WriteLine($"El JUGADOR {Apellido} recibió tarjeta AMARILLA.");
+        }
+
+        public override void MiActividad()
+        {
+            Console.WriteLine("Mi actividad es el Futbol. ");
         }
     }
 }

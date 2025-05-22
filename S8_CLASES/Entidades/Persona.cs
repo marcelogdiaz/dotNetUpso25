@@ -52,5 +52,8 @@ namespace S8_CLASES.Entidades
             return Edad;
         }
 
+        public virtual void MiActividad() {
+            Console.WriteLine("No tengo una actividad especifica. ");
+        }
     }
 }

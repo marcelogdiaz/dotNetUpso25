@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,9 +11,47 @@ namespace S8_CLASES
 
     internal class Program
     {
+
+        //TODO: Queda pendiente el ejemplo de SEALED
+
+        //public class X {
+        //    public virtual void A() {
+        //        Console.WriteLine("A(x)");
+        //    }
+        //}
+
+        //public class Y:X {   //si coloco SEALED en la declaracion de la clase, corta la herencia
+        //    public  override void A()     //si coloco SEALED en la declaracion del método, no se puede redefinir
+        //    {
+        //        Console.WriteLine("A(y)");
+        //    }
+        //}
+
+        //public class Z :Y { 
+        //    public override void A() {
+        //        Console.WriteLine("A(z)");
+        //    }
+        //}
+
         static void Main(string[] args)
         {
-            //Persona person1 = new Persona("Perez", "Juan",33);
+
+            /*
+             ejemplo de SEALED
+             */
+
+            //X x = new X();
+            //Y y = new Y();
+            //Z z = new Z();
+
+            //x.A();
+            //y.A();
+            //z.A();
+
+            //------------------------------------------------------
+
+            //Error en compilacion al intentar crear objetos de una clase abstracta
+            //Persona person1 = new Persona("Perez", "Juan", 33);
             //Persona person2 = new Persona("Rodriguez");
 
             //Console.WriteLine($"{person1.Apellido} {person1.Nombre} tiene {person1.Edad} años.");
@@ -28,8 +67,8 @@ namespace S8_CLASES
             //Console.WriteLine("****************************");
             //Console.WriteLine($"{person2.Apellido} {person2.Nombre} tiene {person2.Edad} años.");
             //Console.WriteLine($"{person3.Apellido} {person3.Nombre} tiene {person3.Edad} años.");
-            
-            
+
+
             List<Deportista> deportistasCenard = new List<Deportista>();
 
             JugadorFutbol j10 = new JugadorFutbol("Messi", "Lionel", 36, "delantero");
@@ -51,13 +90,13 @@ namespace S8_CLASES
             deportistasCenard.Add(new Deportista("Loza", "Ruben", 32));
 
 
-            //Random valor = new Random();
-            //int ivalor = valor.Next(0,12);
-            ////mandar a precalentar a un jugador cualquiera
-            //equipoLocal.ElementAt(ivalor).Precalentar();
+            Random valor = new Random();
+            int ivalor = valor.Next(0, 12);
+            //mandar a precalentar a un jugador cualquiera
+            deportistasCenard.ElementAt(ivalor).Precalentar();
 
-            //j10.Precalentar();
-            //j10.MiActividad();
+            j10.Precalentar();
+            j10.MiActividad();
 
             foreach (var item in deportistasCenard)
             {

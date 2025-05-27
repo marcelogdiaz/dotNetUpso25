@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace S8_CLASES.Entidades
 {
-    internal class Persona
+    internal abstract class Persona
     {
+
+        //TODO: queda pendiente ejemplos con CLASES ABSTRACTAS
+
+        /**
+         QUEDA PENDIENTE UN EJEMPLO DE ABSTRACTAS
+         */
+
         #region ATRIBUTOS
         private string nombre;
         private string apellido;
@@ -52,8 +59,9 @@ namespace S8_CLASES.Entidades
             return Edad;
         }
 
-        public virtual void MiActividad() {
-            Console.WriteLine("No tengo una actividad especifica. ");
-        }
+        public abstract void MiActividad();
+        //{
+        //    Console.WriteLine("No tengo una actividad especifica. ");
+        //}
     }
 }

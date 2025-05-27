@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="S8_CLASES.Entidades.Deportista">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAgAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Entidades\Deportista.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="S8_CLASES.Entidades.JugadorFutbol">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAIAghAAAEIQAAAAEAAA=</HashCode>
+      <FileName>Entidades\JugadorFutbol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="S8_CLASES.Entidades.Persona">
+    <Position X="5.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAQAAACEAAAAgAAAAAAgAgAAAAIAAAAAAAA=</HashCode>
+      <FileName>Entidades\Persona.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

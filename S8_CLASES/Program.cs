@@ -98,7 +98,27 @@ namespace S8_CLASES
             j10.Precalentar();
             j10.MiActividad();
 
-            foreach (var item in deportistasCenard)
+            deportistasCenard.Add(new JugadorHockey("Aimar", "Luciana",30)) ;
+
+            //foreach (var item in deportistasCenard)
+            //{
+            //    Console.Write($"Soy {item.Apellido}, {item.Nombre} - ");
+            //    item.MiActividad();
+            //    Console.WriteLine("-------------------");
+            //}
+
+            List<Persona> jjoo = new List<Persona> ();
+            jjoo.Add(new Referi("Alvarez", "Pedro", 45));
+            jjoo.Add(new Referi("Suarez", "Carlos", 47));
+
+            //recorrer los deportistas del cenard y cargarlos en el listado de jjoo
+            foreach (var dc in deportistasCenard)
+            {
+                jjoo.Add(dc);
+            }
+
+            //mostramos la actividad de c/u de los integrantes de los jjoo
+            foreach (var item in jjoo)
             {
                 Console.Write($"Soy {item.Apellido}, {item.Nombre} - ");
                 item.MiActividad();

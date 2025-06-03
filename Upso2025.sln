@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S8_CLASES", "S8_CLASES\S8_C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S10_INTERFACES", "S10_INTERFACES\S10_INTERFACES.csproj", "{E86E2CA5-8108-415D-8834-A1A0034045FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S11_Formularios", "S11_Formularios\S11_Formularios.csproj", "{B3463C74-C543-45B0-B4E2-9016437EE52A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{E86E2CA5-8108-415D-8834-A1A0034045FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E86E2CA5-8108-415D-8834-A1A0034045FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E86E2CA5-8108-415D-8834-A1A0034045FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3463C74-C543-45B0-B4E2-9016437EE52A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3463C74-C543-45B0-B4E2-9016437EE52A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3463C74-C543-45B0-B4E2-9016437EE52A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3463C74-C543-45B0-B4E2-9016437EE52A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -36,14 +36,15 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.apellidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.edadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.infraccionesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.posicionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.infraccionesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jugadorFutbolBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelMensaje = new System.Windows.Forms.Label();
             this.groupBoxInfoPersonal = new System.Windows.Forms.GroupBox();
             this.textBoxApellido = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -51,8 +52,9 @@
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.textBoxEdad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxPosicioin = new System.Windows.Forms.TextBox();
+            this.textBoxPosicion = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.jugadorHockeyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -61,14 +63,15 @@
             this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBoxInfoPersonal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.jugadorHockeyBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonNuevoJugador
             // 
-            this.buttonNuevoJugador.Location = new System.Drawing.Point(51, 227);
+            this.buttonNuevoJugador.Location = new System.Drawing.Point(121, 260);
             this.buttonNuevoJugador.Name = "buttonNuevoJugador";
             this.buttonNuevoJugador.Size = new System.Drawing.Size(228, 52);
-            this.buttonNuevoJugador.TabIndex = 0;
+            this.buttonNuevoJugador.TabIndex = 7;
             this.buttonNuevoJugador.Text = "Agregar Jugador";
             this.buttonNuevoJugador.UseVisualStyleBackColor = true;
             this.buttonNuevoJugador.Click += new System.EventHandler(this.buttonTitulo_Click);
@@ -90,7 +93,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(720, 338);
+            this.tabControl1.Size = new System.Drawing.Size(720, 371);
             this.tabControl1.TabIndex = 2;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -100,7 +103,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(712, 309);
+            this.tabPage1.Size = new System.Drawing.Size(712, 342);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado General";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -125,53 +128,52 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.apellidoDataGridViewTextBoxColumn,
-            this.edadDataGridViewTextBoxColumn,
-            this.infraccionesDataGridViewTextBoxColumn,
-            this.nombreDataGridViewTextBoxColumn,
-            this.posicionDataGridViewTextBoxColumn});
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn3,
+            this.posicionDataGridViewTextBoxColumn,
+            this.infraccionesDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.jugadorFutbolBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(29, 115);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(615, 150);
             this.dataGridView1.TabIndex = 1;
             // 
-            // apellidoDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn2
             // 
-            this.apellidoDataGridViewTextBoxColumn.DataPropertyName = "Apellido";
-            this.apellidoDataGridViewTextBoxColumn.HeaderText = "Apellido";
-            this.apellidoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.apellidoDataGridViewTextBoxColumn.Name = "apellidoDataGridViewTextBoxColumn";
-            this.apellidoDataGridViewTextBoxColumn.Width = 125;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Apellido";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Apellido";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 125;
             // 
-            // edadDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn1
             // 
-            this.edadDataGridViewTextBoxColumn.DataPropertyName = "Edad";
-            this.edadDataGridViewTextBoxColumn.HeaderText = "Edad";
-            this.edadDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.edadDataGridViewTextBoxColumn.Name = "edadDataGridViewTextBoxColumn";
-            this.edadDataGridViewTextBoxColumn.Width = 125;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Nombre";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
             // 
-            // infraccionesDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn3
             // 
-            this.infraccionesDataGridViewTextBoxColumn.DataPropertyName = "Infracciones";
-            this.infraccionesDataGridViewTextBoxColumn.HeaderText = "Infracciones";
-            this.infraccionesDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.infraccionesDataGridViewTextBoxColumn.Name = "infraccionesDataGridViewTextBoxColumn";
-            this.infraccionesDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.Width = 125;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Edad";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Edad";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 125;
             // 
             // posicionDataGridViewTextBoxColumn
             // 
@@ -179,7 +181,18 @@
             this.posicionDataGridViewTextBoxColumn.HeaderText = "Posicion";
             this.posicionDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.posicionDataGridViewTextBoxColumn.Name = "posicionDataGridViewTextBoxColumn";
+            this.posicionDataGridViewTextBoxColumn.ReadOnly = true;
             this.posicionDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // infraccionesDataGridViewTextBoxColumn
+            // 
+            this.infraccionesDataGridViewTextBoxColumn.DataPropertyName = "Infracciones";
+            this.infraccionesDataGridViewTextBoxColumn.HeaderText = "Infracciones";
+            this.infraccionesDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.infraccionesDataGridViewTextBoxColumn.Name = "infraccionesDataGridViewTextBoxColumn";
+            this.infraccionesDataGridViewTextBoxColumn.ReadOnly = true;
+            this.infraccionesDataGridViewTextBoxColumn.Visible = false;
+            this.infraccionesDataGridViewTextBoxColumn.Width = 125;
             // 
             // jugadorFutbolBindingSource
             // 
@@ -191,21 +204,34 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(712, 309);
+            this.tabPage2.Size = new System.Drawing.Size(712, 342);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Agregar Jugador";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labelMensaje);
             this.panel1.Controls.Add(this.groupBoxInfoPersonal);
-            this.panel1.Controls.Add(this.textBoxPosicioin);
+            this.panel1.Controls.Add(this.textBoxPosicion);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.buttonNuevoJugador);
             this.panel1.Location = new System.Drawing.Point(6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(468, 297);
+            this.panel1.Size = new System.Drawing.Size(468, 340);
             this.panel1.TabIndex = 0;
+            this.panel1.Click += new System.EventHandler(this.panel1_Click);
+            // 
+            // labelMensaje
+            // 
+            this.labelMensaje.AutoSize = true;
+            this.labelMensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMensaje.Location = new System.Drawing.Point(57, 22);
+            this.labelMensaje.Name = "labelMensaje";
+            this.labelMensaje.Size = new System.Drawing.Size(329, 26);
+            this.labelMensaje.TabIndex = 9;
+            this.labelMensaje.Text = "El jugador se creo exitosamente!";
+            this.labelMensaje.Visible = false;
             // 
             // groupBoxInfoPersonal
             // 
@@ -215,7 +241,7 @@
             this.groupBoxInfoPersonal.Controls.Add(this.textBoxNombre);
             this.groupBoxInfoPersonal.Controls.Add(this.textBoxEdad);
             this.groupBoxInfoPersonal.Controls.Add(this.label3);
-            this.groupBoxInfoPersonal.Location = new System.Drawing.Point(40, 20);
+            this.groupBoxInfoPersonal.Location = new System.Drawing.Point(110, 58);
             this.groupBoxInfoPersonal.Name = "groupBoxInfoPersonal";
             this.groupBoxInfoPersonal.Size = new System.Drawing.Size(239, 162);
             this.groupBoxInfoPersonal.TabIndex = 8;
@@ -270,17 +296,17 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Edad";
             // 
-            // textBoxPosicioin
+            // textBoxPosicion
             // 
-            this.textBoxPosicioin.Location = new System.Drawing.Point(145, 188);
-            this.textBoxPosicioin.Name = "textBoxPosicioin";
-            this.textBoxPosicioin.Size = new System.Drawing.Size(100, 22);
-            this.textBoxPosicioin.TabIndex = 7;
+            this.textBoxPosicion.Location = new System.Drawing.Point(215, 226);
+            this.textBoxPosicion.Name = "textBoxPosicion";
+            this.textBoxPosicion.Size = new System.Drawing.Size(100, 22);
+            this.textBoxPosicion.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(42, 188);
+            this.label4.Location = new System.Drawing.Point(112, 226);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 16);
             this.label4.TabIndex = 6;
@@ -307,6 +333,7 @@
             this.panel1.PerformLayout();
             this.groupBoxInfoPersonal.ResumeLayout(false);
             this.groupBoxInfoPersonal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.jugadorHockeyBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -325,7 +352,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxApellido;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxPosicioin;
+        private System.Windows.Forms.TextBox textBoxPosicion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.GroupBox groupBoxInfoPersonal;
@@ -333,10 +360,15 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource jugadorFutbolBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn apellidoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn edadDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn infraccionesDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn edadDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label labelMensaje;
+        private System.Windows.Forms.BindingSource jugadorHockeyBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn posicionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn infraccionesDataGridViewTextBoxColumn;
     }
 }
 

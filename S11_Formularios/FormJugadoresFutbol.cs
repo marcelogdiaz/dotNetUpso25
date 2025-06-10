@@ -24,10 +24,21 @@ namespace S11_Formularios
 
         private void buttonTitulo_Click(object sender, EventArgs e)
         {
+            //creamos el jugador
             JugadorFutbol j = new JugadorFutbol(textBoxApellido.Text, textBoxNombre.Text,
-                Int32.Parse( textBoxEdad.Text), textBoxPosicioin.Text);
+                Int32.Parse( textBoxEdad.Text), textBoxPosicion.Text);
 
+            //lo agregamos a nuestra lista en memoria
             deportistasCenard.Add(j);
+
+            //inicializamos los controles en vacio
+            textBoxApellido.Text = "";
+            textBoxNombre.Text = "";
+            textBoxEdad.Text = "";
+            textBoxPosicion.Text = "";
+            //---------------------------
+
+            labelMensaje.Visible = true;
         }
 
 
@@ -44,6 +55,9 @@ namespace S11_Formularios
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //ocultamos el cartel de mensaje
+            labelMensaje.Visible=false;
+
             //vaciamos la lista
             listBox1.Items.Clear();
 
@@ -57,6 +71,11 @@ namespace S11_Formularios
             //es necesario crear un BINDINGLIST
             var milistabindeada = new BindingList<JugadorFutbol>(deportistasCenard);
             dataGridView1.DataSource = milistabindeada;
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            labelMensaje.Visible = false;
         }
     }
 }

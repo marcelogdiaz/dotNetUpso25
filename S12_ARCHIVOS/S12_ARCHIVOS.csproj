@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B3463C74-C543-45B0-B4E2-9016437EE52A}</ProjectGuid>
+    <ProjectGuid>{25374DA5-6857-4F58-8FF9-252AE2F8090F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>S11_Formularios</RootNamespace>
-    <AssemblyName>S11_Formularios</AssemblyName>
+    <RootNamespace>S12_ARCHIVOS</RootNamespace>
+    <AssemblyName>S12_ARCHIVOS</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,39 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entidades\Deportista.cs" />
-    <Compile Include="Entidades\JugadorFutbol.cs" />
-    <Compile Include="Entidades\JugadorHockey.cs" />
-    <Compile Include="Entidades\Persona.cs" />
-    <Compile Include="Entidades\Referi.cs" />
-    <Compile Include="FormAcercaDe.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAcercaDe.Designer.cs">
-      <DependentUpon>FormAcercaDe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormJugadoresFutbol.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormJugadoresFutbol.Designer.cs">
-      <DependentUpon>FormJugadoresFutbol.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormPrincipal.Designer.cs">
-      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormAcercaDe.resx">
-      <DependentUpon>FormAcercaDe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormJugadoresFutbol.resx">
-      <DependentUpon>FormJugadoresFutbol.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormPrincipal.resx">
-      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -89,9 +66,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Properties\DataSources\FormJugadoresFutbol.datasource" />
-    <None Include="Properties\DataSources\S8_CLASES.Entidades.JugadorFutbol.datasource" />
-    <None Include="Properties\DataSources\S8_CLASES.Entidades.JugadorHockey.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

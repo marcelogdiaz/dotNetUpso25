@@ -75,9 +75,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="stores\201\premier.json" />
+    <None Include="stores\201\sales.json" />
+    <None Include="stores\premier.json" />
+    <None Include="stores\sales.json" />
+    <None Include="stores\Walmart_Sales.csv" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="stores\201\inventory.txt" />
+    <Content Include="stores\totals.txt" />
+    <Content Include="UPSO\alumnos.txt" />
+    <Content Include="UPSO\LISTADO.TXT" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="stores\202\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

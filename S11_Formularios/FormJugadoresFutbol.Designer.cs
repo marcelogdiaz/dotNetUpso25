@@ -119,6 +119,7 @@
             // 
             // listBox1
             // 
+            this.listBox1.DataSource = this.jugadorFutbolBindingSource;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(29, 15);

@@ -64,12 +64,14 @@ namespace S11_Formularios
             //cargamos la lista con los deportistas
             foreach (var item in deportistasCenard)
             {
-                listBox1.Items.Add(item.Apellido+" "+item.Nombre+": "+item.Posicion);
+                listBox1.Items.Add(item.Apellido + " " + item.Nombre + ": " + item.Posicion);
             }
+
 
             //como List<> no implementa IBindingList, que es necesaria para qua la grilla actualice los items,
             //es necesario crear un BINDINGLIST
             var milistabindeada = new BindingList<JugadorFutbol>(deportistasCenard);
+
             dataGridView1.DataSource = milistabindeada;
         }
 

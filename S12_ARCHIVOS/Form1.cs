@@ -106,6 +106,7 @@ namespace S12_ARCHIVOS
                     while (!sr.EndOfStream)
                     {
                         textBoxContenidoStream.Text += sr.ReadLine() + Environment.NewLine;
+                        Console.WriteLine(sr.ReadLine());
                     }
                     sr.Close();
                 }

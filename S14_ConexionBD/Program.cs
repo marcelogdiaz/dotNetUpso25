@@ -11,7 +11,7 @@ namespace S14_ConexionBD
     {
         static void Main(string[] args)
         {
-            string connecionString = "Data Source=Pollux_Movil\\SQLEXPRESS; Initial Catalog=Northwind; Integrated Security=true";
+            string connecionString = "Data Source=<INSTANCIASQL>; Initial Catalog=Northwind; Integrated Security=true";
 
             //llamamos a la consulta de productos
             selectProduct(connecionString, 15);
